@@ -1,6 +1,8 @@
-// variables & block
-let age = 30;
-
-if (true){
-    console.log('outside the code block: ', age);
+let user = {
+    name: 'sinyet',
+    color: 'black',
+    sex: 'male'
 }
+
+user.name = 'manure';
+console.log(user.name);
