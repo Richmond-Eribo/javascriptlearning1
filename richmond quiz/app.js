@@ -3,9 +3,9 @@ const correctAnswers = ['A', 'B', 'A', 'A', 'A'];
 const form = document.querySelector('.quiz-form');
 const result = document.querySelector('.result');
 const Insult = document.querySelector('.insult');
-const myBlessing = document.querySelector('.myBlessing');
 
-form.addEventListener('submit', e => {
+
+let thisForm = form.addEventListener('submit', e => {
     e.preventDefault();
 
     let score = 0; 
@@ -24,9 +24,15 @@ form.addEventListener('submit', e => {
     scrollTo(0,0);
 
     if (score < 50) {
-        Insult.classList.remove('d-none');
+        // Insult.classList.remove('d-none');
+        // Insult.style.display = 'block';
+        Insult.textContent = 'Motherfucking bitch, you are not worth';
     } else {
-        myBlessing.classList.remove('d-none');};
+        // myBlessing.classList.remove('d-none');
+        // myBlessing.style.display = 'block';
+        Insult.textContent = "Well, you're my bitch congrat";
+    
+    };
 
     
 
@@ -43,8 +49,6 @@ form.addEventListener('submit', e => {
 
     
 
-
 });
-
 
 
